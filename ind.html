@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="Image/x-icon" href="favicon-32x32.png" rel="icon">
+<link rel="stylesheet" href="st.css">
+<title> 🎄Новогодние планы </title>
+<script src="javascript.js"></script>
+</head>
+<body>
+<marquee behavior=alternate scrollamount=25 vspace=25 direction=right bgcolor="#ffd110"> <img src="С наступающим 2024!.png"> </marquee>
+<div class="container">
+    <h1> 🎄Новогодние планы хC: </h1>
+    <div class="add-task">
+        <input type="text" id="newTask" placeholder="Добавить новую задачу">
+        <button onclick="addTask()"> Добавить </button>
+	<button class="colorBTN" onclick="clearAllTasks()"> Очистить всё </button>
+    </div>
+    <div id="tasks" class="tasks-list"></div>
+</div>
+<div class="christmas-tree"></div>
+<footer>
+<hr size=3 color=yellow> <p align=center> <font size=5 color=white> <strong> <kbd> Copyright © </kbd> </strong> </font> </p>
+</footer>
+</body>
+</html>

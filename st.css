@@ -1,0 +1,100 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #00ca22;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Это устанавливает минимальную высоту в 100% высоты видимой области */
+}
+
+.wrapper {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto; /* Отталкиваем футер вниз, захватывая все свободное пространство */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #c62828; /* Crimson Red */
+}
+
+.tasks-list {
+    margin-top: 20px;
+}
+
+.task {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #ffeb3b; /* Yellow */
+}
+
+.task:hover {
+    background-color: #ffd740; /* Light Yellow */
+}
+
+.completed {
+    text-decoration: line-through;
+    background-color: #81c784; /* Light Green */
+}
+
+.add-task {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    flex-grow: 1;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.colorBTN {
+background-color: #E32636;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Анимированная ёлочка */
+.christmas-tree {
+    position: fixed;
+    top: 7em;
+    right: 0;
+    height: 100%;
+    width: 600px;
+    background: url('ёлочка.png') no-repeat;
+    background-size: contain;
+    animation: shakeTree 1.7s infinite;
+}
+
+@keyframes shakeTree {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
